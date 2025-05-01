@@ -35,7 +35,7 @@ Route::middleware('auth')->group(function () {
     // domain.com/learning/100/5 = belajar install laravel pada windows
     Route::get('/learning{course}/{courseVideoId}', [FrontController::class, 'learning'])->name('front.learning')->middleware('role:student|teacher|owner');
 
-    Route::prefix('admin')->name('admin')->group(function () {
+    Route::prefix('admin')->name('admin.')->group(function () {
         Route::resource('categories', CategoryController::class)->middleware('role:owner'); // admin.categories.index
 
         Route::resource('teachers', TeacherController::class)->middleware('role:owner');
