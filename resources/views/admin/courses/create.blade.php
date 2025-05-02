@@ -41,21 +41,6 @@
                         <x-input-error :messages="$errors->get('path_trailer')" class="mt-2" />
                     </div>
 
-                    {{-- <div class="mt-4">
-                        <x-input-label for="teacher" :value="__('teacher')" />
-
-                        <select name="teacher_id" id="teacher_id"
-                            class="py-3 rounded-lg pl-3 w-full border border-slate-300">
-                            <option value="">Choose item</option>
-                            @forelse($teachers as $teacher)
-                                <option value="{{ $teacher->id }}">{{ $teacher->name }}</option>
-                            @empty
-                            @endforelse
-                        </select>
-
-                        <x-input-error :messages="$errors->get('category')" class="mt-2" />
-                    </div> --}}
-
                     <div class="mt-4">
                         <x-input-label for="category" :value="__('category')" />
 
