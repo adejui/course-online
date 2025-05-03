@@ -40,12 +40,25 @@
                                 {{ \Carbon\Carbon::parse($transaction->created_at)->translatedFormat('d F Y H.i') }}
                             </h3>
                         </div>
+                        <div>
+                            <p class="text-slate-500 text-sm mb-1">Status</p>
+                            @if ($transaction->is_paid)
+                                <span class="py-1 px-3 text-sm font-bold rounded-full bg-green-500 text-white">
+                                    ACTIVE
+                                </span>
+                            @else
+                                <span class="py-1 px-3 text-sm font-bold rounded-full bg-orange-500 text-white">
+                                    PENDING
+                                </span>
+                            @endif
+                        </div>
                         <div class="hidden md:flex flex-col">
                             <p class="text-slate-500 text-sm">Student</p>
                             <h3 class="text-indigo-950 text-xl font-bold">{{ $transaction->user->name }}</h3>
                         </div>
                         <div class="hidden md:flex flex-row items-center gap-x-3">
-                            <a href="#" class="font-bold py-4 px-6 bg-indigo-700 text-white rounded-full">
+                            <a href="{{ route('admin.subscribe_transactions.show', $transaction) }}"
+                                class="font-bold py-4 px-6 bg-indigo-700 text-white rounded-full">
                                 View Details
                             </a>
                         </div>

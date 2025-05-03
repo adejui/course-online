@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\SubscribeTransaction;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class SubscribeTransactionController extends Controller
@@ -38,7 +40,7 @@ class SubscribeTransactionController extends Controller
      */
     public function show(SubscribeTransaction $subscribeTransaction)
     {
-        //
+        return view('admin.transactions.show', compact('subscribeTransaction'));
     }
 
     /**
@@ -54,7 +56,16 @@ class SubscribeTransactionController extends Controller
      */
     public function update(Request $request, SubscribeTransaction $subscribeTransaction)
     {
-        //
+        DB::transaction(function () use ($subscribeTransaction) {
+
+            $subscribeTransaction->update([
+                'is_paid' => true,
+                'subscription_start_date' => Carbon::now(),
+
+            ]);
+        });
+
+        return redirect()->route('admin.subscribe_transactions.show', $subscribeTransaction);
     }
 
     /**
