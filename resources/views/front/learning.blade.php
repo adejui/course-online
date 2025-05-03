@@ -50,7 +50,7 @@
         <div class="video-player relative flex flex-nowrap gap-5">
             <div class="plyr__video-embed w-full overflow-hidden relative rounded-[20px]" id="player">
                 <iframe
-                    src="https://www.youtube.com/embed/{{ $course->path_trailer }}?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                    src="https://www.youtube.com/embed/{{ $video->path_video }}?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
                     allowfullscreen allowtransparency allow="autoplay"></iframe>
             </div>
             <div
@@ -58,8 +58,8 @@
                 <p class="font-bold text-lg text-black">{{ $course->course_videos->count() }} Lessons</p>
                 <div class="flex flex-col gap-3">
                     <div
-                        class="text-white group p-[12px_16px] flex items-center gap-[10px] bg-[#3525B3] rounded-full hover:bg-[#3525B3] transition-all duration-300">
-                        <div class="text-white group-hover:text-white transition-all duration-300">
+                        class="group p-[12px_16px] flex items-center gap-[10px] bg-[#E9EFF3] rounded-full hover:bg-[#3525B3] transition-all duration-300">
+                        <div class="text-black group-hover:text-white transition-all duration-300">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000.svg') }}">
                                 <path
@@ -73,9 +73,13 @@
                         </a>
                     </div>
                     @forelse ($course->course_videos as $courseVideo)
+                        @php
+                            $currentVideoId = Route::current()->parameter('courseVideoId');
+                            $isActive = $currentVideoId == $courseVideo->id;
+                        @endphp
                         <div
-                            class="text-white group p-[12px_16px] flex items-center gap-[10px] bg-[#E9EFF3] rounded-full hover:bg-[#3525B3] transition-all duration-300">
-                            <div class="text-black group-hover:text-white transition-all duration-300">
+                            class="text-white group p-[12px_16px] flex items-center gap-[10px] {{ $isActive ? 'bg-[#3525B3]' : 'bg-[#E9EFF3]' }}  rounded-full hover:bg-[#3525B3] transition-all duration-300">
+                            <div class="{{ $isActive ? 'text-white' : 'text-black' }} group-hover:text-white transition-all duration-300">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000.svg') }}">
                                     <path
@@ -84,7 +88,7 @@
                                 </svg>
                             </div>
                             <a href="{{ route('front.learning', [$course, 'courseVideoId' => $courseVideo->id]) }}">
-                                <p class="text-black font-semibold group-hover:text-white transition-all duration-300">
+                                <p class="{{ $isActive ? 'text-white' : 'text-black' }} font-semibold group-hover:text-white transition-all duration-300">
                                     {{ $courseVideo->name }}
                                 </p>
                             </a>
