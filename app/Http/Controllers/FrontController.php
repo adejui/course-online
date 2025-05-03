@@ -34,4 +34,14 @@ class FrontController extends Controller
 
         return view('front.learning', compact('course', 'video'));
     }
+
+    public function pricing()
+    {
+        return view('front.pricing');
+    }
+
+    public function checkout()
+    {
+        return view('front.checkout');
+    }
 }
