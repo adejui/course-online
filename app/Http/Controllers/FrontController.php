@@ -9,7 +9,9 @@ class FrontController extends Controller
 {
     public function index()
     {
-        return view('front.index');
+        $courses = Course::with(['students', 'category', 'teacher'])->orderByDesc('id')->get();
+
+        return view('front.index', compact('courses'));
     }
 
     public function details(Course $course)
