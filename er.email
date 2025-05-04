@@ -1,0 +1,167 @@
+[33mcommit 19180f32df0ebc36661cd31386342bc6d03f061b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author:     adejui <adejuinurrochim@email.com>
+AuthorDate: Sun May 4 00:28:50 2025 +0700
+Commit:     adejui <adejuinurrochim@email.com>
+CommitDate: Sun May 4 00:28:50 2025 +0700
+
+    feat: implement subscription checkout functionality
+
+[33mcommit f857b0d841fe5a3d09a607ba091e5d8a07f7c963[m
+Author:     adejui <adejuinurrochim@email.com>
+AuthorDate: Sat May 3 23:53:36 2025 +0700
+Commit:     adejui <adejuinurrochim@email.com>
+CommitDate: Sat May 3 23:53:36 2025 +0700
+
+    feat: add pricing page and checkout view
+
+[33mcommit fac10d0e5309eeff7b705d6a66f91cac53bfd268[m
+Author:     adejui <adejuinurrochim@email.com>
+AuthorDate: Sat May 3 23:31:39 2025 +0700
+Commit:     adejui <adejuinurrochim@email.com>
+CommitDate: Sat May 3 23:31:39 2025 +0700
+
+    chore: clean up and organize navbar routing
+
+[33mcommit b1ed1f2810f1b74b8374a30c784f738dd904eb2a[m
+Author:     adejui <adejuinurrochim@email.com>
+AuthorDate: Sat May 3 23:07:59 2025 +0700
+Commit:     adejui <adejuinurrochim@email.com>
+CommitDate: Sat May 3 23:07:59 2025 +0700
+
+    feat: implement course learning feature for students
+
+[33mcommit d886fd055dd248bba08f13c5f9168eb9fd8653f8[m
+Author:     adejui <adejuinurrochim@email.com>
+AuthorDate: Sat May 3 22:34:01 2025 +0700
+Commit:     adejui <adejuinurrochim@email.com>
+CommitDate: Sat May 3 22:34:01 2025 +0700
+
+    feat: display course detail page
+
+[33mcommit 7c226c9aa2250e21d7c8cf2ef4c5d85b01c1d861[m
+Author:     adejui <adejuinurrochim@email.com>
+AuthorDate: Sat May 3 21:41:02 2025 +0700
+Commit:     adejui <adejuinurrochim@email.com>
+CommitDate: Sat May 3 21:41:02 2025 +0700
+
+    feat: create homepage and display course listings
+
+[33mcommit 7c2ad660691b0883afbfbf4ba332d568ac99dd19[m
+Author:     adejui <adejuinurrochim@email.com>
+AuthorDate: Sat May 3 09:32:14 2025 +0700
+Commit:     adejui <adejuinurrochim@email.com>
+CommitDate: Sat May 3 09:32:14 2025 +0700
+
+    feat: customize dashboard reports for better insights
+
+[33mcommit 8765a299a764a43fcb93f4d095ba69ff7d628f06[m
+Author:     adejui <adejuinurrochim@email.com>
+AuthorDate: Sat May 3 09:08:04 2025 +0700
+Commit:     adejui <adejuinurrochim@email.com>
+CommitDate: Sat May 3 09:08:04 2025 +0700
+
+    feat: allow owner to approve subscription transactions
+
+[33mcommit 289639709358bee9d95e2913966e4ab18fa41ed1[m
+Author:     adejui <adejuinurrochim@email.com>
+AuthorDate: Sat May 3 08:42:20 2025 +0700
+Commit:     adejui <adejuinurrochim@email.com>
+CommitDate: Sat May 3 08:42:20 2025 +0700
+
+    feat: implement subscription list view for owner
+
+[33mcommit c44b07074a3f7209a6f5f46bf5605ae6e789a301[m
+Author:     adejui <adejuinurrochim@email.com>
+AuthorDate: Fri May 2 22:42:33 2025 +0700
+Commit:     adejui <adejuinurrochim@email.com>
+CommitDate: Fri May 2 22:42:33 2025 +0700
+
+    feat: allow teacher to edit and delete course videos
+
+[33mcommit 5d1ab8384a197e5f2ca84abcaeffeba7ce695fa8[m
+Author:     adejui <adejuinurrochim@email.com>
+AuthorDate: Fri May 2 22:05:51 2025 +0700
+Commit:     adejui <adejuinurrochim@email.com>
+CommitDate: Fri May 2 22:05:51 2025 +0700
+
+    feat: allow teacher to add videos to courses
+
+[33mcommit adc3291580c20bb90d0909777494657bee711977[m
+Author:     adejui <adejuinurrochim@email.com>
+AuthorDate: Fri May 2 21:46:02 2025 +0700
+Commit:     adejui <adejuinurrochim@email.com>
+CommitDate: Fri May 2 21:46:02 2025 +0700
+
+    feat: implement course edit and update functionality for teacher
+
+[33mcommit f8e97d7a14d6c912ca602df11f67766d9164ffcf[m
+Author:     adejui <adejuinurrochim@email.com>
+AuthorDate: Fri May 2 21:12:46 2025 +0700
+Commit:     adejui <adejuinurrochim@email.com>
+CommitDate: Fri May 2 21:12:46 2025 +0700
+
+    feat: allow teacher to save and delete courses
+
+[33mcommit c096173851766d508c8992f4d6a07a8a4bde5007[m
+Author:     adejui <adejuinurrochim@email.com>
+AuthorDate: Fri May 2 19:24:37 2025 +0700
+Commit:     adejui <adejuinurrochim@email.com>
+CommitDate: Fri May 2 19:24:37 2025 +0700
+
+    feat: implement course view and creation for teacher
+
+[33mcommit 8f0550b42ba1a05680824bd414d54ba1a530551d[m
+Author:     adejui <adejuinurrochim@email.com>
+AuthorDate: Thu May 1 23:58:53 2025 +0700
+Commit:     adejui <adejuinurrochim@email.com>
+CommitDate: Thu May 1 23:58:53 2025 +0700
+
+    feat: allow owner to add and remove teachers
+
+[33mcommit b4ae631d0d1871ab011baa3e16873ad37b8d6d77[m
+Author:     adejui <adejuinurrochim@email.com>
+AuthorDate: Thu May 1 21:55:17 2025 +0700
+Commit:     adejui <adejuinurrochim@email.com>
+CommitDate: Thu May 1 21:55:17 2025 +0700
+
+    feat: add CRUD for categories and complete all custom form requests
+
+[33mcommit a77d4b9cb35df602c5176329950997b6afe4feb4[m
+Author:     adejui <adejuinurrochim@email.com>
+AuthorDate: Thu May 1 19:38:00 2025 +0700
+Commit:     adejui <adejuinurrochim@email.com>
+CommitDate: Thu May 1 19:38:00 2025 +0700
+
+    feat: add role & permission seeder and student role routes
+
+[33mcommit de9a1829bc30a8cc38a777c42259a51aa7bed6fb[m
+Author:     adejui <adejuinurrochim@email.com>
+AuthorDate: Thu May 1 15:43:48 2025 +0700
+Commit:     adejui <adejuinurrochim@email.com>
+CommitDate: Thu May 1 15:43:48 2025 +0700
+
+    feat: complete all route definitions
+
+[33mcommit abad581aea6c7a6704c33877859310b37c44543b[m
+Author:     adejui <adejuinurrochim@email.com>
+AuthorDate: Thu May 1 13:59:41 2025 +0700
+Commit:     adejui <adejuinurrochim@email.com>
+CommitDate: Thu May 1 13:59:41 2025 +0700
+
+    feat: complete all models and add missing migration
+
+[33mcommit b0363653031d8b4c1f18422f209f9d2a1f0e9fee[m
+Author:     adejui <adejuinurrochim@email.com>
+AuthorDate: Thu May 1 12:03:20 2025 +0700
+Commit:     adejui <adejuinurrochim@email.com>
+CommitDate: Thu May 1 12:03:20 2025 +0700
+
+    feat: complete all database migrations
+
+[33mcommit e527487d431f02c0786cba409ea40c061087e46c[m
+Author:     adejui <adejuinurrochim@email.com>
+AuthorDate: Thu May 1 11:08:28 2025 +0700
+Commit:     adejui <adejuinurrochim@email.com>
+CommitDate: Thu May 1 11:08:28 2025 +0700
+
+    initialize Laravel project

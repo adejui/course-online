@@ -117,7 +117,7 @@
     </section>
     <section id="Video-Resources" class="flex flex-col mt-5">
         <div class="max-w-[1100px] w-full mx-auto flex flex-col gap-3">
-            <h1 class="title font-extrabold text-[30px] leading-[45px]">Full-Stack JavaScript Developer 2024</h1>
+            <h1 class="title font-extrabold text-[30px] leading-[45px]">{{ $course->name }}</h1>
             <div class="flex items-center gap-5">
                 <div class="flex items-center gap-[6px]">
                     <div>
